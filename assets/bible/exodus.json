@@ -1,0 +1,34 @@
+{
+  "book": "Exode",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": [
+        {"verse": 1, "text": "Voici les noms des fils d’Israël venus en Égypte avec Jacob, leur père. Ils y vinrent chacun avec sa famille:"},
+        {"verse": 2, "text": "Ruben, Siméon, Lévi et Juda,"},
+        {"verse": 3, "text": "Issacar, Zabulon et Benjamin,"},
+        {"verse": 4, "text": "Dan et Nephthali, Gad et Aser."},
+        {"verse": 8, "text": "Il s’éleva sur l’Égypte un nouveau roi, qui n’avait point connu Joseph."},
+        {"verse": 11, "text": "Et l’on établit sur lui des chefs de corvées, afin de l’accabler de pénibles travaux. C’est ainsi qu’il bâtit pour Pharaon les villes de Pithom et de Ramsès."}
+      ]
+    },
+    {
+      "chapter": 2,
+      "verses": [
+        {"verse": 1, "text": "Un homme de la maison de Lévi avait pris pour femme une fille de Lévi."},
+        {"verse": 2, "text": "Cette femme devint enceinte et enfanta un fils. Elle vit qu’il était beau, et elle le cacha pendant trois mois."},
+        {"verse": 3, "text": "Ne pouvant plus le cacher, elle prit une caisse de jonc, qu’elle enduisit de bitume et de poix; elle y mit l’enfant, et le déposa parmi les roseaux, sur le bord du fleuve."},
+        {"verse": 10, "text": "Quand l’enfant eut grandi, elle l’amena à la fille de Pharaon, et il fut pour elle comme un fils. Elle lui donna le nom de Moïse, car, dit-elle, je l’ai tiré des eaux."}
+      ]
+    },
+    {
+      "chapter": 3,
+      "verses": [
+        {"verse": 1, "text": "Moïse faisait paître le troupeau de Jéthro, son beau-père, sacrificateur de Madian; et il mena le troupeau derrière le désert, et vint à la montagne de Dieu, à Horeb."},
+        {"verse": 2, "text": "L’ange de l’Éternel lui apparut dans une flamme de feu, au milieu d’un buisson. Moïse regarda; et voici, le buisson était tout en feu, et le buisson ne se consumait point."},
+        {"verse": 4, "text": "L’Éternel vit qu’il se détournait pour voir; et Dieu l’appela du milieu du buisson, et dit: Moïse! Moïse! Et il répondit: Me voici!"},
+        {"verse": 5, "text": "Dieu dit: N’approche pas d’ici, ôte tes souliers de tes pieds, car le lieu sur lequel tu te tiens est une terre sainte."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+
+{
+  "book": "Genèse",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": [
+        {"verse": 1, "text": "Au commencement, Dieu créa les cieux et la terre."},
+        {"verse": 2, "text": "La terre était informe et vide: il y avait des ténèbres à la surface de l'abîme, et l'esprit de Dieu se mouvait au-dessus des eaux."},
+        {"verse": 3, "text": "Dieu dit: Que la lumière soit! Et la lumière fut."},
+        {"verse": 4, "text": "Dieu vit que la lumière était bonne; et Dieu sépara la lumière d'avec les ténèbres."},
+        {"verse": 5, "text": "Dieu appela la lumière jour, et il appela les ténèbres nuit. Ainsi, il y eut un soir, et il y eut un matin: ce fut le premier jour."}
+      ]
+    },
+    {
+      "chapter": 2,
+      "verses": [
+        {"verse": 1, "text": "Ainsi furent achevés les cieux et la terre, et toute leur armée."},
+        {"verse": 2, "text": "Dieu acheva au septième jour son oeuvre, qu'il avait faite: et il se reposa au septième jour de toute son oeuvre, qu'il avait faite."},
+        {"verse": 3, "text": "Dieu bénit le septième jour, et il le sanctifia, parce qu'en ce jour il se reposa de toute son oeuvre qu'il avait créée en la faisant."}
+      ]
+    }
+  ]
+}
