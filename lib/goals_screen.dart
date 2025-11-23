@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:automatisation_flutter/goal_model.dart';
+import 'package:blessing/goal_model.dart';
 import 'database_service.dart';
 
 // Pour un ID utilisateur factice. À remplacer par une vraie authentification.
@@ -33,7 +33,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
                 controller: titleController,
                 style: const TextStyle(color: Colors.white),
                 decoration: const InputDecoration(
-                  labelText: 'Titre de l'objectif',
+                  labelText: 'Titre de l\'objectif',
                   labelStyle: TextStyle(color: Colors.white70),
                   focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.pinkAccent)),
                   enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.white24)),
@@ -41,7 +41,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
               ),
               const SizedBox(height: 20),
               DropdownButtonFormField<String>(
-                value: selectedType,
+                initialValue: selectedType,
                 dropdownColor: const Color(0xFF2C3A5B),
                 style: const TextStyle(color: Colors.white),
                 decoration: const InputDecoration(
@@ -111,7 +111,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
           if (!snapshot.hasData || snapshot.data!.isEmpty) {
             return const Center(
               child: Text(
-                'Aucun objectif défini.\nCliquez sur '+' pour en ajouter un.',
+                'Aucun objectif défini.\nCliquez sur le \'+\' pour en ajouter un.',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white70, fontSize: 16),
               ),
@@ -165,7 +165,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
                           ElevatedButton(
                             onPressed: () {
                               if (goal.currentProgress < goal.target) {
-                                _dbService.updateGoalProgress(goal.id, FAKE_USER_ID, goal.currentProgress + 1);
+                                _dbService.updateGoalProgress(goal.id, FAKE_USER_ID, goal.currentProgress + 1, goal.currentProgress + 1 >= goal.target);
                               }
                             },
                             style: ElevatedButton.styleFrom(

@@ -9,7 +9,7 @@ class EnseignementsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final DatabaseService _dbService = DatabaseService();
+    final DatabaseService dbService = DatabaseService();
 
     return Scaffold(
       backgroundColor: const Color(0xFF1F2B4E),
@@ -19,7 +19,7 @@ class EnseignementsScreen extends StatelessWidget {
         elevation: 0,
       ),
       body: StreamBuilder<List<Enseignement>>(
-        stream: _dbService.getEnseignements(),
+        stream: dbService.getEnseignements(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());

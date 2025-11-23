@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:automatisation_flutter/testimony_model.dart';
+import 'package:blessing/testimony_model.dart';
 import 'database_service.dart';
 
 // Pour un ID utilisateur factice. À remplacer par une vraie authentification.

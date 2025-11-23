@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
+import 'login_screen.dart'; 
 
 // 1. Importer Firebase Core
 import 'package:firebase_core/firebase_core.dart';
@@ -25,14 +25,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'App Religieuse',
+      title: 'Blessing', // Modifié pour le nouveau nom
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         // Définir une police par défaut si nécessaire
         // fontFamily: 'VotrePolice',
       ),
-      home: const HomeScreen(),
+      home: const LoginScreen(), // Modifié pour démarrer sur SplashScreen
       debugShowCheckedModeBanner: false, // Cache la bannière de debug
     );
   }

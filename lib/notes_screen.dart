@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:automatisation_flutter/note_model.dart';
+import 'package:blessing/note_model.dart';
 import 'database_service.dart';
 // Pour un ID utilisateur factice. À remplacer par une vraie authentification.
 const String FAKE_USER_ID = '12345';

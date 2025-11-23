@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:automatisation_flutter/note_model.dart';
-import 'package:automatisation_flutter/goal_model.dart';
-import 'package:automatisation_flutter/testimony_model.dart';
-import 'package:automatisation_flutter/user_model.dart'; // Importer le modèle utilisateur
+import 'package:blessing/note_model.dart';
+import 'package:blessing/goal_model.dart';
+import 'package:blessing/testimony_model.dart';
+import 'package:blessing/user_model.dart'; // Importer le modèle utilisateur
 import 'hymne_model.dart';
 import 'enseignement_model.dart';
 import 'evenement_model.dart';

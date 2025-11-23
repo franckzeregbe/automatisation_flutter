@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:automatisation_flutter/user_model.dart';
+import 'package:blessing/user_model.dart';
 import 'database_service.dart';
 
 // Pour un ID utilisateur factice. À remplacer par une vraie authentification.
 const String FAKE_USER_ID = '12345';
+const String FAKE_USER_NAME = 'Vous';
 
 class GamificationScreen extends StatelessWidget {
   const GamificationScreen({super.key});
@@ -38,7 +39,7 @@ class GamificationScreen extends StatelessWidget {
                 const SizedBox(height: 30),
                 _buildBadgesSection(),
                 const SizedBox(height: 30),
-                _buildLeaderboardPreview(),
+                _buildLeaderboardPreview(user),
               ],
             ),
           );
@@ -108,7 +109,7 @@ class GamificationScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildLeaderboardPreview() {
+  Widget _buildLeaderboardPreview(AppUser user) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -117,7 +118,7 @@ class GamificationScreen extends StatelessWidget {
         // Maquette du classement. Une vraie implémentation nécessiterait une requête Firestore.
         Card(color: const Color(0xFF2C3A5B), child: ListTile(leading: const Text('🥇', style: TextStyle(fontSize: 22)), title: const Text('Utilisateur A', style: TextStyle(color: Colors.white)), trailing: const Text('560 XP', style: TextStyle(color: Colors.amber)))),
         Card(color: const Color(0xFF2C3A5B), child: ListTile(leading: const Text('🥈', style: TextStyle(fontSize: 22)), title: const Text('Utilisateur B', style: TextStyle(color: Colors.white)), trailing: const Text('480 XP', style: TextStyle(color: Colors.grey)))),
-        Card(color: const Color(0xFF2C3A5B), child: ListTile(leading: const Text('🥉', style: TextStyle(fontSize: 22)), title: Text(FAKE_USER_NAME, style: const TextStyle(color: Colors.white)), trailing: const Text('Votre XP', style: TextStyle(color: Colors.brown)))),
+        Card(color: const Color(0xFF2C3A5B), child: ListTile(leading: const Text('🥉', style: TextStyle(fontSize: 22)), title: Text(FAKE_USER_NAME, style: const TextStyle(color: Colors.white)), trailing: Text('${user.xp} XP', style: const TextStyle(color: Colors.brown)))),
       ],
     );
   }
